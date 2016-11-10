@@ -57,7 +57,7 @@ remove_sensitive_files(){
    read -p "Are you sure you want to delete this file? [y|n] " confirmation
    if [[ $confirmation == 'y' ]]
    then
-      rm sensitive_file
+      rm $sensitive_file
    else
       echo "No action taken"
    fi
